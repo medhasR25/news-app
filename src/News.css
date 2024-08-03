@@ -1,0 +1,101 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --link-color: #1e90ff;
+    --border-color: #ddd;
+    --button-background: #f1f1f1;
+    --button-active-background: #007bff;
+    --button-hover-background: #ddd;
+    --glass-bg: rgba(255, 255, 255, 0.3); /* Glassy background color with transparency */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   background: url('https://static.vecteezy.com/system/resources/previews/013/101/117/original/eps10-black-article-or-newspaper-line-art-icon-isolated-on-white-background-press-or-magazine-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-app-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color); /* Ensures text is readable on top of the background image */
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.news-article {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--glass-bg); /* Glassy background color with transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 8px; /* Optional: Rounded corners for a smoother look */
+}
+
+.news-article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-article p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.news-article a {
+    font-size: 1em;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-button {
+    background-color: var(--button-background);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.page-button.active {
+    background-color: var(--button-active-background);
+    color: white;
+}
+
+.page-button:hover {
+    background-color: var(--button-hover-background);
+}
+
+.toggle-button {
+    background-color: var(--button-background);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.toggle-button:hover {
+    background-color: var(--button-hover-background);
+}

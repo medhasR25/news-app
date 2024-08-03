@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* src/News.css */
+.news-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-size: cover;
+  color: #fff; /* Ensure text is readable on top of the background image */
 }
 
-.App-link {
-  color: #61dafb;
+.news-article {
+  border: 1px solid rgba(255, 255, 255, 0.4); /* More transparent border */
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More transparent shadow */
+  background-color: rgba(0, 0, 0, 0.4); /* More transparent background for readability */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.news-article h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
+
+.news-article p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.8); /* More transparent text color */
+}
+
+.news-article a {
+  font-size: 1em;
+  color: rgba(30, 144, 255, 0.9); /* More transparent link color */
+  text-decoration: none;
+}
+
+.news-article a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: rgba(255, 255, 255, 0.6); /* More transparent background for pagination buttons */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7); /* More transparent text for readability */
+}
+
+.page-button.active {
+  background-color: rgba(0, 123, 255, 0.8); /* More transparent active button background */
+  color: rgba(255, 255, 255, 0.9); /* More transparent active button text color */
+}
+
+.page-button:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly lighter transparent background on hover */
+}
+
+
+/* src/App.css */
+
+/* src/App.css */
+
+.App-header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the ends */
+    align-items: center; /* Centers items vertically */
+    background-color: black; /* Dark background for the header */
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-logo {
+    height: 80px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+

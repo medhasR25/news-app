@@ -1,0 +1,26 @@
+.app-bar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.category-button {
+    margin: 0 10px;
+    padding: 10px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.category-button.active {
+    border-bottom: 2px solid white;
+}
+
+.category-button:hover {
+    color: #ccc;
+}
